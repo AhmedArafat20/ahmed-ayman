@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ahmed Ayman Kamal | Front-End React Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="orb o1"></div><div class="orb o2"></div>
+<nav>
+  <div class="links"><a href="#about" data-t="n_about"></a><a href="#skills" data-t="n_skills"></a><a href="#projects" data-t="n_projects"></a><a href="#certs" data-t="n_certs"></a><a href="#contact" data-t="n_contact"></a></div>
+  <button id="lang" type="button">AR</button>
+</nav>
+<main>
+<section id="hero">
+  <div class="pent-wrap"><div class="pent" id="pent"><div class="in" id="photo"><b>AK</b></div></div></div>
+  <h1 id="name"></h1>
+  <div id="role" data-t="role"></div>
+  <div class="cta">
+    <a class="btn mag p" id="b-cv" href="#" download data-t="b_cv"></a>
+    <a class="btn mag" id="b-gh" href="#" target="_blank" rel="noopener" data-t="b_gh"></a>
+    <a class="btn mag" href="#projects" data-t="b_pr"></a>
+  </div>
+  <div class="scroll" aria-hidden="true"></div>
+</section>
+
+<section id="about">
+  <h2 class="rv" data-t="about_h"></h2>
+  <p class="lead rv" id="summary"></p>
+  <div class="stats rv">
+    <div><strong data-n="15">0</strong><span data-t="st_apps"></span></div>
+    <div><strong data-n="4">0</strong><span data-t="st_year"></span></div>
+    <div><strong id="st-cert" data-n="5">0</strong><span data-t="st_cert"></span></div>
+  </div>
+  <div class="grid3">
+    <div class="card spot rv"><h3 data-t="edu_h"></h3><b data-t="edu_t"></b><small>09/2021 – 06/2025</small><p data-t="edu_d"></p></div>
+    <div class="card spot rv"><h3 data-t="exp_h"></h3><b data-t="exp_t"></b><small>01/2022 – <span data-t="present"></span></small><ul id="exp"></ul></div>
+    <div class="card spot rv"><h3 data-t="lang_h"></h3><div id="langs"></div></div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="rv" data-t="skills_h"></h2>
+  <div class="marquee rv"><div id="mq"></div></div>
+  <div class="grid3" id="sk"></div>
+</section>
+
+<section id="projects">
+  <h2 class="rv" data-t="proj_h"></h2>
+  <p class="sub rv" data-t="proj_sub"></p>
+  <div class="pgrid" id="pg"></div>
+</section>
+
+<section id="certs">
+  <h2 class="rv" data-t="cert_h"></h2>
+  <p class="sub rv" data-t="cert_sub"></p>
+  <div class="cgrid" id="cg"></div>
+</section>
+
+<section id="contact">
+  <h2 class="rv" data-t="contact_h"></h2>
+  <p class="sub rv" data-t="contact_sub"></p>
+  <div class="cta rv" id="ct"></div>
+</section>
+</main>
+<footer>© 2026 Ahmed Ayman Kamal</footer>
+<div id="lb" role="dialog" aria-label="preview"></div>
+<script src="js/data.js"></script>
+<script src="js/background.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
