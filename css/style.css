@@ -241,8 +241,20 @@ h2 {
   overflow: hidden
 }
 
-.pent{--up:-8%;--zoom:1.18}
-.pent img{width:100%;height:100%;object-fit:cover;object-position:50% 0;transform-origin:50% 0;transform:translateY(var(--up)) scale(var(--zoom))}
+.pent {
+  --up: -8%;
+  --zoom: 1.1
+}
+
+.pent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+  transform-origin: 50% 0;
+  transform: translateY(var(--up)) scale(var(--zoom))
+}
+
 .pent b {
   font-size: 4.2rem;
   font-weight: 800;
