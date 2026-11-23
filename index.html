@@ -13,7 +13,7 @@
 <div class="orb o1"></div><div class="orb o2"></div>
 <nav>
   <div class="links"><a href="#about" data-t="n_about"></a><a href="#skills" data-t="n_skills"></a><a href="#projects" data-t="n_projects"></a><a href="#certs" data-t="n_certs"></a><a href="#contact" data-t="n_contact"></a></div>
-  <button id="lang" type="button">AR</button>
+  <button id="lang" type="button">العربية</button>
 </nav>
 <main>
 <section id="hero">
@@ -32,9 +32,9 @@
   <h2 class="rv" data-t="about_h"></h2>
   <p class="lead rv" id="summary"></p>
   <div class="stats rv">
-    <div><strong data-n="15">0</strong><span data-t="st_apps"></span></div>
+    <div><strong id="st-apps" class="ex" data-n="94">0</strong><span data-t="st_apps"></span></div>
     <div><strong data-n="4">0</strong><span data-t="st_year"></span></div>
-    <div><strong id="st-cert" data-n="5">0</strong><span data-t="st_cert"></span></div>
+    <div><strong id="st-cert" class="ex" data-n="17">0</strong><span data-t="st_cert"></span></div>
   </div>
   <div class="grid3">
     <div class="card spot rv"><h3 data-t="edu_h"></h3><b data-t="edu_t"></b><small>09/2021 – 06/2025</small><p data-t="edu_d"></p></div>
@@ -51,8 +51,13 @@
 
 <section id="projects">
   <h2 class="rv" data-t="proj_h"></h2>
-  <p class="sub rv" data-t="proj_sub"></p>
+  <p class="sub rv" id="pcount"></p>
+  <h3 class="hlh rv" data-t="p_hl"></h3>
+  <div class="hl" id="hl"></div>
+  <div class="bar" id="bar"><div class="pills" id="pills"></div><input id="q" type="search" autocomplete="off" aria-label="search"></div>
   <div class="pgrid" id="pg"></div>
+  <p class="sub none" id="none" hidden data-t="p_none"></p>
+  <div class="more"><span id="shown"></span><button class="btn" id="more" type="button"></button></div>
 </section>
 
 <section id="certs">
@@ -69,8 +74,16 @@
 </main>
 <footer>© 2026 Ahmed Ayman Kamal</footer>
 <div id="lb" role="dialog" aria-label="preview"></div>
+<div id="pv" role="dialog" aria-label="live preview"><div class="pvbox">
+  <div class="pvbar"><b id="pvt"></b><span class="pvhint" data-t="pvhint"></span>
+    <div class="pvact"><button type="button" data-dev="d" data-t="desktop"></button><button type="button" data-dev="m" data-t="mobile"></button>
+    <a id="pvo" target="_blank" rel="noopener" data-t="open"></a><a id="pvg" target="_blank" rel="noopener">GitHub</a><button type="button" id="pvx" aria-label="close">✕</button></div></div>
+  <div class="pvframe" id="pvframe" data-dev="d"><iframe id="pvf" title="preview" referrerpolicy="no-referrer"></iframe></div>
+</div></div>
+<script src="js/images.js"></script>
 <script src="js/data.js"></script>
 <script src="js/background.js"></script>
+<script src="js/projects.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

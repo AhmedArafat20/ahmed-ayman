@@ -1,0 +1,6 @@
+{
+  "name": "ahmed-portfolio",
+  "private": true,
+  "scripts": { "shots": "node tools/screenshots.js", "names": "node tools/names.js", "manifest": "node tools/manifest.js" },
+  "dependencies": { "puppeteer": "^23.0.0" }
+}

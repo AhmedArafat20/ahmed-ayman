@@ -1,0 +1,96 @@
+Name each screenshot exactly like this (jpg / png / webp all work):
+
+01  graduation_project.jpg              Fitweb — AI Fitness App
+02  curax.jpg                           Curax
+03  pharoa.jpg                          HIERO WEAR
+04  movies.jpg                          Movies App
+05  checkpoint.jpg                      Checkpoint Menu
+06  arishet_alyasmeen.jpg               Arishet Al Yasmeen
+07  demo-ui-flowers.jpg                 Flowers Shop
+08  earth-and-solar-system.jpg          Earth & Solar System
+09  mostafa-ashraf.jpg                  Mostafa Ashraf Portfolio
+10  adv1.jpg                            Al Saqr Arabi Factory
+11  alsaqr-project.jpg                  Al Saqr Arabi Factory II
+12  test.jpg                            Al Saqr Arabi Factory III
+13  alkhaleeg.jpg                       Al Khaleeg Laser Cutting
+14  am-technology.jpg                   AM Technology
+15  itn-gama.jpg                        ITN Gama
+16  alaraby.jpg                         Al Rabie Modern Contracting
+17  asphalt-site.jpg                    Asphalt Contracting
+18  gaddah.jpg                          Contracting & Carpentry
+19  handasa.jpg                         Engineering Office
+20  mokawl.jpg                          Riyadh Contractor
+21  trmim.jpg                           Renovation & Finishing
+22  hnager.jpg                          Hangars & Shades
+23  hadm.jpg                            Demolition & Scrap
+24  samer-gnoub.jpg                     Exterior GRC Decor
+25  ynba-albahr.jpg                     Yanbu Building Materials
+26  garage-door.jpg                     Automatic Doors
+27  gdoor.jpg                           Automatic Doors Khobar
+28  decor.jpg                           Painting & Wallpaper
+29  dehan2.jpg                          Painting & Epoxy
+30  project-dehan.jpg                   Riyadh Painter
+31  lamsat-fn.jpg                       Lamsat Fan
+32  geddah_bord.jpg                     Gypsum Board & Decor
+33  gypsum-geddah.jpg                   Gypsum Ceilings
+34  website.jpg                         Gypsum Board Jeddah
+35  hadath-alganoub.jpg                 Hadath Al Janoub
+36  alqema.jpg                          Al Qimma Kitchens
+37  site5.jpg                           Bedroom Furniture
+38  ceramic.jpg                         Ceramic & Marble
+39  balat.jpg                           Tile Installer
+40  mbalat-ceramic.jpg                  Ceramic Contractor
+41  diwan-site.jpg                      Diwan Stone
+42  medmac.jpg                          Medmac Marble
+43  unitedmedmac.jpg                    United Medmac
+44  almadina_company.jpg                Al Madina Glass
+45  co.jpg                              Mirrors & Glass
+46  pr1.jpg                             Glass & Mirrors
+47  watan.jpg                           Watan Glass
+48  aladham.jpg                         Al Adham Tanks
+49  alnoor.jpg                          Al Noor Tanks
+50  azl.jpg                             Insulation Services
+51  azlll.jpg                           Leak Detection 24h
+52  site2.jpg                           Leak Detection Jeddah
+53  site4.jpg                           Roof & Tank Insulation
+54  jazl-site.jpg                       Hafr Al Batin Insulation
+55  rokn-momen.jpg                      Rokn Al Momen
+56  nabeaalhoda.jpg                     Nabea Al Huda
+57  air.jpg                             Al Ahsa AC Maintenance
+58  alafdal.jpg                         Al Afdal Cooling
+59  takeef.jpg                          Jeddah AC Maintenance
+60  takeefat.jpg                        Khamis Mushait AC
+61  takeeff.jpg                         Khamis & Abha Services
+62  web1.jpg                            Used AC Buying
+63  web2.jpg                            Used AC Trading
+64  naeim.jpg                           Appliance Repair
+65  markaz-alnokhba.jpg                 Al Nokhba TV Repair
+66  eldarp.jpg                          Motor Repair Workshop
+67  isnad2.jpg                          Commercial Kitchen Equipment
+68  alhamzawy.jpg                       Al Hamzawy Used Appliances
+69  albaraka-site.jpg                   Al Baraka Used Goods
+70  ahmed-tulba.jpg                     Ahmed Tolba Plumber
+71  almina.jpg                          Electrical & Plumbing
+72  kahraba-mnazl.jpg                   Home Electrician
+73  kahrbaey.jpg                        Plumber & Electrician
+74  sbak.jpg                            Riyadh Plumber
+75  gas.jpg                             Central Gas Piping
+76  qasoura.jpg                         Taif Central Gas
+77  mahmoud-mokhtar.jpg                 Mahmoud Mokhtar
+78  isnad.jpg                           Elevator Services
+79  aboabdullah.jpg                     Mecca Furniture Moving
+80  site6.jpg                           Riyadh Furniture Moving
+81  site9.jpg                           Taif Furniture Moving
+82  abomohammad.jpg                     Forklift & Crane Rental
+83  almarj_cooler.jpg                   Al Marj Refrigerated Transport
+84  alnesr.jpg                          Al Nesr Delivery
+85  site7.jpg                           Storage Warehouses
+86  scrab.jpg                           Scrap Buying
+87  balat-arar.jpg                      Arar Cleaning
+88  manchester-clean.jpg                Manchester Cleaning
+89  prestige_touch.jpg                  Prestige Touch
+90  project-motkn.jpg                   Najran Maintenance
+91  site.jpg                            Abu Dhabi Maintenance
+92  faridahomecare.jpg                  Farida Home Care
+93  hams.jpg                            Sponsorship Transfers
+94  internet.jpg                        Home Internet

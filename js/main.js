@@ -1,22 +1,24 @@
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
-let L = "en", timer, firstRender = true;
+let L = "en", firstRender = true;
 const tx = v => (v && typeof v === "object" && !Array.isArray(v)) ? (v[L] || v.en) : v;
+
+/* images: try the given extension first, then the others; hide the <img> if none exists */
+const IMG_EXT = ["jpg", "jpeg", "png", "webp"];
+function imgNext(el) {
+  const b = el.dataset.b; if (!b) { el.remove(); return; }
+  const list = el.dataset.e.split(","), i = +el.dataset.i + 1;
+  if (i < list.length) { el.dataset.i = i; el.src = b + "." + list[i]; } else el.remove();
+}
+const imgTag = src => {
+  const m = src.match(/^(.*)\.(jpe?g|png|webp)$/i);
+  const ex = m ? [m[2].toLowerCase(), ...IMG_EXT.filter(e => e !== m[2].toLowerCase())].join(",") : "";
+  return `<img loading="lazy" src="${src}" ${m ? `data-b="${m[1]}" data-i="0" data-e="${ex}"` : ""} alt="" onerror="imgNext(this)">`;
+};
 const pad = n => String(n + 1).padStart(2, "0");
 
-/* name "decrypt" effect (English only; Arabic shows plainly) */
-function decrypt(el, text) {
-  clearInterval(timer);
-  if (L === "ar") { el.textContent = text; return; }
-  const set = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#$%&*<>/"; let i = 0;
-  timer = setInterval(() => {
-    el.textContent = [...text].map((c, k) => c === " " ? " " : k < i ? c : set[Math.random() * set.length | 0]).join("");
-    i += .45; if (i >= text.length) { clearInterval(timer); el.textContent = text; }
-  }, 35);
-}
-
 const card = (i, inner, cls) => `<div class="card spot rv ${cls}" style="--d:${(i % 4) * .07}s">${inner}</div>`;
-const imgBox = (src, n) => `<div class="img"><em>${pad(n)}</em><img loading="lazy" src="${src}" alt="" onerror="this.remove()"></div>`;
+const imgBox = (src, n) => `<div class="img"><em>${pad(n)}</em>${imgTag(src)}</div>`;
 
 function render() {
   const t = T[L];
@@ -32,21 +34,19 @@ function render() {
   $("#mq").innerHTML = [...all, ...all].map(s => `<i>${s}</i>`).join("");
   $("#sk").innerHTML = SKILLS.map((s, i) => card(i, `<h3>${tx(s.h)}</h3><div class="chips">${tx(s.items).map(x => `<i>${x}</i>`).join("")}</div>`, "")).join("");
 
-  $("#pg").innerHTML = PROJECTS.map((p, i) => card(i,
-    `${imgBox(p.image || `img/projects/${i + 1}.jpg`, i)}<div class="body"><h3>${p.title}</h3><p>${tx(p.desc) || ""}</p>
-     <div class="tags">${(p.tags || []).map(x => `<i>${x}</i>`).join("")}</div>
-     <div class="acts">${p.github ? `<a class="mini" href="${p.github}" target="_blank" rel="noopener">${t.code}</a>` : ""}${p.live ? `<a class="mini p" href="${p.live}" target="_blank" rel="noopener">${t.live}</a>` : ""}</div></div>`, "proj")).join("");
+  renderProjects();
 
   $("#cg").innerHTML = CERTS.map((c, i) => card(i,
-    `${imgBox(c.image || `img/certs/${i + 1}.jpg`, i)}<div class="body"><h3>${tx(c.title)}</h3><p>${tx(c.issuer) || ""}</p></div>`, "cert")).join("");
+    `${imgBox(c.image || `img/certs/${i + 1}.jpeg`, i)}<div class="body"><h3>${tx(c.title)}</h3><p>${tx(c.issuer) || ""}${c.year ? " · " + c.year : ""}</p></div>`, "cert")).join("");
 
   $("#ct").innerHTML = [[t.email, LINKS.email, "mailto:" + LINKS.email], [t.phone, LINKS.phone, "tel:" + LINKS.phone], [t.linkedin, "LinkedIn", LINKS.linkedin], [t.code, "GitHub", LINKS.github]]
     .map(c => `<a class="card spot ct" href="${c[2]}" ${c[2].startsWith("http") ? 'target="_blank" rel="noopener"' : ""}><small>${c[0]}</small><b dir="ltr">${c[1]}</b></a>`).join("");
 
   $("#b-cv").href = LINKS.cv; $("#b-gh").href = LINKS.github;
-  $("#st-cert").dataset.n = CERTS.length;
-  if (firstRender) { firstRender = false; setTimeout(() => decrypt($("#name"), T[L].name), 1400); }
-  else decrypt($("#name"), t.name);
+  $("#st-cert").dataset.n = CERTS.length; $("#st-apps").dataset.n = LIST.length;
+  const nm = $("#name"); nm.textContent = t.name;
+  if (!firstRender) { nm.style.animation = "none"; void nm.offsetWidth; nm.style.animation = ""; nm.style.animationDelay = "0s,.8s"; }
+  firstRender = false;
   bind(); $$(".rv").forEach(e => io.observe(e));
 }
 
@@ -75,5 +75,6 @@ document.addEventListener("click", e => { const b = e.target.closest(".img"); if
 lb.onclick = () => lb.classList.remove("on");
 addEventListener("keydown", e => { if (e.key === "Escape") lb.classList.remove("on"); });
 
+initProjects();
 $("#lang").onclick = () => { L = L === "en" ? "ar" : "en"; render(); };
 render();
