@@ -148,7 +148,7 @@ const CERTS = [
   { title: { en: "Cyber Security", ar: "الأمن السيبراني" }, issuer: { en: "Information Technology Institute (ITI)", ar: "معهد تكنولوجيا المعلومات (ITI)" }, year: 2024 },
   { title: { en: "NASA Space Apps Challenge", ar: "تحدي ناسا Space Apps" }, issuer: { en: "NASA", ar: "ناسا" }, year: 2024 },
   { title: { en: "Graduation Achievement", ar: "شهادة تقدير عند التخرج" }, issuer: { en: "Egyptian E-Learning University (EELU)", ar: "الجامعة المصرية للتعلم الإلكتروني" }, year: 2025 },
-  { title: { en: "Preparatory Certificate", ar: "شهادة السنة التمهيدية" }, issuer: { en: "Sohag University", ar: "جامعة سوهاج" }, year: 2022 },
+  
   { title: { en: "Device Configuration & Management", ar: "إعداد وإدارة الأجهزة" }, issuer: { en: "ITS / Certiport", ar: "ITS / Certiport" }, year: 2024 },
   { title: { en: "Network Virtualization Concepts", ar: "مفاهيم المحاكاة الافتراضية للشبكات" }, issuer: { en: "Mahara Tech", ar: "Mahara Tech" }, year: 2022 },
   { title: { en: "Cloud & Virtualization Concepts", ar: "مفاهيم الحوسبة السحابية والمحاكاة الافتراضية" }, issuer: { en: "Mahara Tech", ar: "Mahara Tech" }, year: 2022 },
