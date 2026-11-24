@@ -73,7 +73,6 @@ const RAW = [
 ["balat","stone","Tile Installer","مركب بلاط","Tile installation, Jeddah.","تركيب بلاط، جدة."],
 ["mbalat-ceramic","stone","Ceramic Contractor","مقاول سيراميك","Ceramic contractor, Riyadh.","مقاول سيراميك، الرياض."],
 ["diwan-site","stone","Diwan Stone","ديوان للرخام","Marble, ceramic and stone.","رخام وسيراميك وحجر."],
-["medmac","stone","Medmac Marble","ميدماك للرخام","Marble industries.","صناعات الرخام."],
 ["Almadina_Company","stone","Al Madina Glass","المدينة للزجاج","Glass company website.","موقع شركة زجاج.","https://work-eight-gamma.vercel.app"],
 ["co","stone","Mirrors & Glass","مرايا وزجاج","Mirrors and glass, Riyadh.","مرايا وزجاج، الرياض."],
 ["pr1","stone","Glass & Mirrors","زجاج ومرايا","Glass and mirrors, Riyadh.","زجاج ومرايا، الرياض."],
